@@ -37,11 +37,15 @@ img {
 
 /* Navbar */
 .navbar {
+	position: fixed;
+	top: 0;
 	background: #fff;
 	padding: 2.5px 5px 0px;
 	max-height: 60px;
+	width: 100%;
 	align-items: center;
 	border-radius: 0px 0 10px 10px;
+	z-index: 1000;
 }
 
 .navbar .container {
@@ -76,7 +80,7 @@ img {
 
 /* Hero Section */
 .hero {
-	margin: 0;
+	margin: 50px 10px;
 }
 
 .hero .container-lg {
@@ -94,18 +98,19 @@ img {
 
 /* Video */
 .video {
-	padding: 20px 0px;
-	margin: 0;
+	padding-bottom: 10px;
+	margin: 0px;
+	z-index: 10;
+}
+
+.video .video-heading {
+	padding-top: 20px;
 }
 
 .video .video-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-.video .video-preview {
-	margin-bottom: 40px;
 }
 
 /* Testimonials */
@@ -117,13 +122,17 @@ img {
 
 .testimonials .testimonials-heading {
 	width: 700px;
-	margin-bottom: 40px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 }
 
 .testimonials .testimonials-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
+}
+.testimonials .testimonials-grid .card {
+	padding-top: 20px;
 }
 
 .testimonials .card p:nth-child(2) {
@@ -136,7 +145,7 @@ img {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 30px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .pricing .pricing-card-subheading {
@@ -144,17 +153,17 @@ img {
 }
 
 .pricing .pricing-card-price {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding: 20px 0px;
 	border-bottom: 1px solid #ccc;
 }
 
 .pricing ul {
-	margin: 30px 0;
+	margin: 40px 0;
 }
 
 .pricing ul li {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .pricig ul li i {
@@ -162,17 +171,24 @@ img {
 }
 
 .pricing .pricing-footer {
-	margin: 20px 0;
+	margin: 10px 0px 40px 0px;
 }
 
 /* FAQ */
 .faq {
-	padding: 40px 0;
+	padding: 10px 0;
+}
+
+.faq .faq-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
 }
 
 .faq .faq-group {
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .faq .faq-group .faq-group-header {
@@ -228,7 +244,7 @@ img {
 
 /* Footer */
 .footer {
-	padding: 40px 0;
+	padding: 20px 0;
 }
 
 .footer h4 {
@@ -258,6 +274,7 @@ img {
 
 .footer .card {
 	margin: 20px 30px 30px 0;
+	padding-top: 10px;
 }
 
 .footer input[type="email"] {
@@ -266,6 +283,10 @@ img {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	margin: 20px 0;
+}
+
+.footer form {
+	text-align: center;
 }
 
 /* Contacts */
@@ -302,7 +323,8 @@ img {
 	background: #fff;
 	color: #000;
 	border-radius: 10px;
-	padding: 0 20px 20px 20px;
+	padding: 0 20px 10px 20px;
+	margin-bottom: 10px;
 }
 
 /* Buttons */
@@ -348,21 +370,21 @@ img {
 	font-size: 3rem;
 	line-height: 1.2;
 	font-weight: 600;
-	margin: 40px 0 20px;
+	margin: 20px 0 15px;
 }
 
 .text-xl {
 	font-size: 2.2rem;
 	line-height: 1.4;
 	font-weight: normal;
-	margin: 40px 0 20px;
+	margin: 30px 0 15px;
 }
 
 .text-lg {
 	font-size: 1.8rem;
 	line-height: 1.4;
 	font-weight: normal;
-	margin: 30px 0 20px;
+	margin: 25px 0 10px;
 }
 
 .text-med {
@@ -376,7 +398,7 @@ img {
 	font-size: 0.9rem;
 	line-height: 1.4;
 	font-weight: normal;
-	margin: 10px 0 5px;
+	margin: 15px 0 5px;
 }
 
 .text-center {
